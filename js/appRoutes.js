@@ -13,7 +13,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'NerdController'
 		})
 
-		.when('/geeks', {
+        .when('/members', {
+            templateUrl: 'partials/member',
+            controller: 'MemberController'
+        })
+
+        .when('/geeks', {
 			templateUrl: 'partials/geek',
 			controller: 'GeekController'	
 		});

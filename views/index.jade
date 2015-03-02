@@ -6,7 +6,7 @@ html(lang='en')
     title Starter Node and Angular
     link(rel='stylesheet', href='/css/css.css')
     script(src='/js/js.js')
-  body(ng-app='sampleApp', ng-controller='NerdController')
+  body(ng-app='sampleApp')
     .container
       nav.navbar.navbar-inverse
         .navbar-header
@@ -16,4 +16,7 @@ html(lang='en')
             a(href='/nerds') Nerds
           li
             a(href='/geeks') Geeks
+          li
+            a(href='/members') Members
+
       div(ng-view='')
